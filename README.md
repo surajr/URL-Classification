@@ -1,4 +1,4 @@
-# URL Classification
+# Phishing URL Classification
 
 Malicious Web sites are a cornerstone of Internet criminal activities.
 These Web sites contain various unwanted content such as spam-advertised products, phishing sites, dangerous "drive-by"
