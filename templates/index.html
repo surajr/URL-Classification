@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    
+    <title>Check URL</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">        
+    </head>
+    <style>
+        h1{
+            text-align: center;
+            padding-top: 200px;
+            font-family:cursive;
+            color: #8B0000;
+            font-size: 50px;
+        }
+        input{
+            width: 60%;
+            font-size: 25px;
+            margin-top: 3%;
+            margin-left: 20%;
+            
+            text-align: center;
+        }
+        button{
+            margin-left: 45%;
+            margin-top: 4%;
+            width: 10%;
+            height: 10%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            border-radius: 25px;
+            background-color: darkred;
+            border-color: darkred;
+            color: aliceblue;
+        }
+        body{
+          background: linear-gradient(100deg, #000000 100%, #4169E1 90%);
+        }
+        h3{
+            margin-left: 45%;
+            color: gold;
+        }
+    </style>
+    <header>
+        
+    </header>
+    <body>
+        <h1>Check your URL here</h1>
+        <form action="{{ url_for('model') }}" method="post">
+            <input type="text" name="search" placeholder="Paste URL here">
+            <button  type="submit">Submit</button>
+            <h3 name="result">{{Result}}</h3>        
+        </form>
+
+    </body>
+    <footer>
+    
+    </footer>
+</html>
